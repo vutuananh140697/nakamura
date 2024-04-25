@@ -1,3 +1,6 @@
+#profile-page {
+    height: 100vh;
+}
 #profile-page .left {
     width: 39vw;
     height: calc(100vh - var(--nav-height));
@@ -24,9 +27,13 @@
 
 #profile-page .right {
     width: 61vw;
-    height: calc(100vh - var(--nav-height));
-    padding: 100px;
-    padding-top: 30vh;
+    /* height: calc(100vh - var(--nav-height)); */
+    height: 100vh;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 0px;
+    overflow: auto;
+    scrollbar-width: none;
 }
 
 #profile-page .right .body .title {

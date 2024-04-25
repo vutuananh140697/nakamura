@@ -12,7 +12,7 @@ export default function ProfilePage(){
         document.title = words.terms.profile.title;
     }, [])
     return(
-        <div id="profile-page" className="mt-nav flex-row-ct">
+        <div id="profile-page" className="mt-nav flex-row">
             <div className="left">
                 <div className="img-wrapper">
                     <img src={process.env.PUBLIC_URL + `/img/profile.jpg`}/>

@@ -19,24 +19,28 @@ export default function ServicePage(){
                 </div>
                 <div className="gallery flex-row-ct">
                     <div className="item">
-                        <HashLink to='/service/#writer' >
+                        <HashLink to='/service/#writer'>
                             <div className="title medium">{words.terms.service.writer}</div>
+                            <div className="img-wrapper">
+                                <img src={process.env.PUBLIC_URL + `/img/service/writer.jpg`}/>
+                            </div>
                         </HashLink>
-                        <div className="img-wrapper">
-                            <img src={process.env.PUBLIC_URL + `/img/service/writer.jpg`}/>
-                        </div>
                     </div>
                     <div className="item">
-                        <div className="title medium">{words.terms.service.ghostWriter}</div>
-                        <div className="img-wrapper">
-                            <img src={process.env.PUBLIC_URL + `/img/service/ghostwriter.jpg`}/>
-                        </div>
+                        <HashLink to='/service/#ghostwriter'>
+                            <div className="title medium">{words.terms.service.ghostWriter}</div>
+                            <div className="img-wrapper">
+                                <img src={process.env.PUBLIC_URL + `/img/service/ghostwriter.jpg`}/>
+                            </div>
+                        </HashLink>
                     </div>
                     <div className="item">
-                        <div className="title medium">{words.terms.service.coach}</div>
-                        <div className="img-wrapper">
-                            <img src={process.env.PUBLIC_URL + `/img/service/coach.jpg`}/>
-                        </div>
+                        <HashLink to='/service/#coach'>
+                            <div className="title medium">{words.terms.service.coach}</div>
+                            <div className="img-wrapper">
+                                <img src={process.env.PUBLIC_URL + `/img/service/coach.jpg`}/>
+                            </div>
+                        </HashLink>
                     </div>
                 </div>
             </section>
@@ -60,7 +64,7 @@ export default function ServicePage(){
                 </div>
             </section>
 
-            <section className="ghostwriter container">
+            <section id="ghostwriter" className="container">
                 <div className="wrapper">
                     <div className="title medium">{words.terms.service.ghostWriter}</div>
                     <div className="grid"> 
@@ -79,7 +83,7 @@ export default function ServicePage(){
                 </div>
             </section>
 
-            <section className="coach container">
+            <section id="coach" className="container">
                 <div className="wrapper">
                     <div className="title medium">{words.terms.service.coach}</div>
                     <div className="grid"> 
