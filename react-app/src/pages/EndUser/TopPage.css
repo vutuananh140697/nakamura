@@ -1,0 +1,178 @@
+#top-page section.hero {
+    height: calc(100vh - var(--nav-height));
+}
+
+#top-page section.hero .left {
+    border-right: 1px solid var(--color-gray);
+    width: 17vw;
+    height: 100%;
+    background: var(--color-white);
+}
+
+#top-page section.hero .right {
+    border-left: 1px solid var(--color-gray);
+    width: 17vw;
+    height: 100%;
+    background: var(--color-white);
+}
+
+#top-page section.hero .divider {
+    background: url('/public/img/icon/slash.svg') repeat;
+    width: 100%;
+    height: 8px;
+}
+#top-page section.hero .left .title, #top-page section.hero .right .title{
+    padding: var(--space-base);
+}
+#top-page section.hero .left .item-title, #top-page section.hero .right .item-title{
+    padding: 0;
+    letter-spacing: .1em;
+}
+
+#top-page section.hero .list {
+    padding: var(--space-base);
+    padding-top: var(--space-m);
+}
+#top-page section.hero .list .list-item {
+    margin-bottom: var(--space-m);
+}
+#top-page section.hero .list .list-item .title {
+    padding: 0;
+}
+#top-page section.hero .list .list-item .date {
+    color: var(--color-light-gray);
+    margin-bottom: var(--space-xs);
+}
+#top-page section.hero .mid {
+    width: 66vw;
+    padding: var(--space-xs);
+}
+#top-page section.hero .mid .title {
+    font-size: 63px;
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    text-align: center;
+    padding-top: var(--space-xs);
+    padding-bottom: var(--space-s);
+    margin-bottom: var(--space-xs);
+}
+#top-page section.hero .mid .kv-wrapper {
+    position: relative;
+}
+#top-page section.hero .mid .kv-wrapper .kvImg {
+    width: calc(66vw - var(--space-xs)*2);
+    height: calc(100vh - 205px);
+    background-image: url('/public/img/kvImg.png');
+    background-position: center;
+    filter: saturate(50%);
+    /* position: absolute; */
+}
+#top-page section.hero .mid .kv-wrapper:hover .kvImg {
+    filter: saturate(1);
+    transition: 1s all ease-out;
+}
+#top-page section.hero .mid .kv-wrapper .gradient {
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.7) 0%, rgba(255,255,255,0) 25%, rgba(255,255,255,0) 100%);
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 99;
+}
+#top-page section.hero .mid .kv-wrapper .message {
+    z-index: 100;
+    color: var(--color-white);
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+    letter-spacing: 0.8em;
+    text-shadow: #000 1px 0 5px;
+}
+#top-page section.hero .mid .kv-wrapper .message div {
+    position: absolute;
+}
+#top-page section.hero .mid .kv-wrapper .message div span {
+    writing-mode: vertical-rl;
+}
+#top-page section.hero .mid .kv-wrapper .message div:first-child {
+    top: 30px;
+    left: 80px;
+}
+#top-page section.hero .mid .kv-wrapper .message div:last-child {
+    top: 45px;
+    left: 35px;
+}
+
+#top-page section.hero .mid .kv-wrapper button {
+    position: absolute;
+    z-index: 101;
+    bottom: var(--space-base);
+    right: var(--space-base);
+}
+
+#top-page .divider img {
+    width: 100%;
+    margin-bottom: var(--space-xs);
+}
+#top-page section.service {
+    height: 205vh;
+    background-color: var(--color-gray);
+    margin: var(--space-xs);
+    margin-bottom: 0;
+}
+#top-page .switcher {
+    width: 100%;
+}
+#top-page section.service .switcher div{
+    border: 1px solid var(--color-gray);
+    text-align: center;
+    padding: var(--space-s);
+    float: left;
+    width: calc(50vw - 2.5px - var(--space-xs));
+    letter-spacing: .5em;
+    background-color: var(--color-white);
+    cursor: pointer;
+}
+#top-page section.service .switcher .active {
+    color: var(--color-white);
+    background-color: var(--color-gray);
+    cursor: default;
+}
+
+#top-page section.feature .img-wrapper {
+    background: url('/public/img/topPage/TP_Feature.png') no-repeat;
+    background-size: contain;
+    width: 1194px;
+    margin: 0 auto;
+    margin-top: 80px;
+    height: 100vh;
+    align-content: center;
+    text-align: center;
+}
+#top-page section.feature .img-wrapper button {
+    margin-top: 30%;
+}
+
+.feature.popup {
+    margin: 0 auto;
+    /* transform: translateX(-50%); */
+    /* padding: var(--space-l); */
+    top: 10%;
+    border-radius: 5px;
+    width: 1050px;
+    height: 90%;
+    position: relative;
+    transition: all 5s ease-in-out;
+    overflow: auto;
+    overflow-x: hidden;
+}
+.feature .close {
+    position: fixed;
+    top: 60px;
+    right: 200px;
+    transition: all 200ms;
+    font-size: 32px;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--color-white);
+    cursor: pointer;
+}

@@ -1,0 +1,40 @@
+#profile-page .left {
+    width: 39vw;
+    height: calc(100vh - var(--nav-height));
+}
+#profile-page .left .img-wrapper {
+    filter: saturate(50%);
+    width: 100%;
+}
+#profile-page .left .img-wrapper img {
+    width: 100%;
+}
+
+#profile-page .left .text-wrapper {
+    background: var(--color-white);
+    border: 1px solid var(--color-gray);
+    padding: var(--space-m);
+    display: flex;
+    justify-content: space-between;
+}
+#profile-page .left .text-wrapper p {
+    width: 65%;
+    padding-top: 5px;
+}
+
+#profile-page .right {
+    width: 61vw;
+    height: calc(100vh - var(--nav-height));
+    padding: 100px;
+    padding-top: 30vh;
+}
+
+#profile-page .right .body .title {
+    background: var(--color-gray);
+    padding: var(--space-base);
+}
+#profile-page .right .body .p-wrapper {
+    border: 1px solid var(--color-gray);
+    padding: var(--space-base);
+    margin-bottom: var(--space-xxl);
+}

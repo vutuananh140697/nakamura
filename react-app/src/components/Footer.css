@@ -1,0 +1,32 @@
+footer {
+    background-color: var(--color-gray);
+    padding: 50px 200px;
+    width: 100vw;
+    color: var(--color-white);
+}
+
+footer .newsletter {
+    margin-bottom: 120px;
+}
+
+footer .touroku-box {
+    z-index: 1000;
+}
+footer .touroku-box input {
+    width: 300px;
+}
+footer .touroku-box button {
+    margin-left: -25px;
+}
+
+footer a {
+    color: var(--color-white);
+}
+footer a:hover {
+    text-decoration: underline;
+    text-underline-offset: 5px;
+}
+footer .policy {
+    gap: var(--space-l);
+    margin-bottom: var(--space-base);
+}

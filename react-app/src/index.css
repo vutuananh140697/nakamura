@@ -1,0 +1,54 @@
+:root {
+  --color-gray: #504A48;
+  --color-white: #F0F0F0;
+  --color-yellow: #FFF500;
+  --color-light-gray: #504a4870;
+  --color-red: #DC2020;
+
+  /* Space - Sizes */
+  --space-none: 0;
+  --space-xs: 4px;
+  --space-s: 8px;
+  --space-base: 16px;
+  --space-m: 24px;
+  --space-l: 32px;
+  --space-xl: 44px;
+  --space-xxl: 52px;
+
+  --nav-height: 90px;
+  --mb-footer: calc(var(--space-xxl)*2);
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Noto Sans JP',sans-serif;
+  font-size: 14px;
+  color: var(--color-gray);
+  background-color: rgb(230, 230, 230);
+}
+body *{z-index: 1; }
+
+body, html {
+  scroll-behavior: smooth;
+
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--color-light-gray); 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--color-gray); 
+}

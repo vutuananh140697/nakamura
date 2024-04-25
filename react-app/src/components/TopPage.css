@@ -1,0 +1,86 @@
+.container {
+    width: 1194px;
+    margin: 0 auto;
+    padding-top: var(--space-xxl);
+    padding-bottom: var(--space-xxl);
+}
+.tp_writer, .tp_coach {
+    padding-top: 120px;
+}
+.tp_blog {
+    margin-bottom: var(--mb-footer);
+}
+.top-divider-white {
+    border-top: 1px solid var(--color-white);
+}
+.top-divider-gray {
+    border-top: 2px solid var(--color-gray);
+}
+.section-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: var(--space-m);
+}
+
+.tp_writer .card-wrapper .text-wrapper, .tp_coach .card-wrapper .coach-card .text-wrapper {
+    background-color: var(--color-white);
+    padding: var(--space-base);
+    padding-left: var(--space-m);
+    height: 100%;
+}
+.tp_writer .card-wrapper .writer-card .text-wrapper {
+    border-right: 1px solid var(--color-gray);
+}
+.tp_writer .card-wrapper .ghostwriter-card .text-wrapper {
+    border-left: 1px solid var(--color-gray);
+}
+.tp_writer .card-wrapper .text-wrapper .intro {
+    margin-left: 125px;
+    margin-top: 15px;
+    letter-spacing: .15em;
+}
+
+.tp_coach .card-wrapper .coach-card .text-wrapper{
+    height: 400px;
+}
+.tp_coach .card-wrapper .coach-card .text-wrapper .intro {
+    margin-left: 70px;
+    margin-top: 15px;
+    letter-spacing: .15em;
+}
+
+.tp_coach .card-wrapper .coach-card .text-wrapper .cta-wrapper {
+    text-align: right;
+    align-content: end;
+    height: 58%;
+}
+
+.tp_review .body .bottom {
+    background: url('/public/img/topPage/TP_Review_bottom.png');
+    height: 250px;
+    text-align: center;
+    align-content: center;
+}
+.review-card-wrapper {
+    background: var(--color-white);
+    padding: var(--space-m);
+    border: 1px solid var(--color-gray);
+    gap: var(--space-m);
+}
+
+section.yourstory {
+    background: url('/public/img/topPage/yourstory.png');
+    background-position: center;
+    height: 640px;
+}
+section.yourstory .wrapper {
+    height: 100%;
+    text-align: center;
+    align-content: center;
+    background: #261f1d65;
+}
+section.yourstory .wrapper button {
+    margin-top: 80px;
+}

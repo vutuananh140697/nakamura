@@ -1,0 +1,12 @@
+.review-card-wrapper .content .description {
+    height: 80px;
+}
+.review-card-wrapper .content .description p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 24vw;
+    display: -webkit-box; 
+    -webkit-box-orient: vertical; 
+    -webkit-line-clamp: 3; 
+    
+}
