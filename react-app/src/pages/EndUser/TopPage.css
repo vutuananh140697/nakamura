@@ -148,6 +148,7 @@
     height: 100vh;
     align-content: center;
     text-align: center;
+    margin-top: 80px;
 }
 #top-page section.feature .img-wrapper button {
     margin-top: 30%;
