@@ -44,7 +44,7 @@ export default function SubscribeForm(){
                         </div>
                         {(!succeed && !error && !loading) &&
                             <Form>
-                                <div className="touroku-box">
+                                <div className="touroku-box flex-row-ct justify-space-btw">
                                     <Field type="email" name="email" id="email" placeholder="メールアドレス" 
                                         className={errors.email && touched.email ? "input-error w-100pc" : "w-100pc"}/>
                                     <button type="submit" name="add" className="primary primary yellow">登録</button>

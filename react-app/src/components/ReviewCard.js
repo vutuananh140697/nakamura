@@ -7,7 +7,7 @@ import './ReviewCard.css'
 
 const ReviewCard = ({name, cover, description, toggleShowPopUp}) => {
     return(
-        <div className='review-card-wrapper flex-row-ct'>
+        <div className='review-card-wrapper'>
             <div className='avatar'>
                 <img className='w-100pc round aspect-square' src={words.api.admin.file.get(cover)}/>
             </div>

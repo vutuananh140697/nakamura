@@ -10,7 +10,7 @@ export default function TP_Writer_Section() {
                 <div className='title large color-white'>{words.terms.service.writer}</div>
                 <Link className='seemore color-white' to={words.routes.user.service}>{words.button.seemore}</Link>
             </div>
-            <div className='card-wrapper flex-row-ct'>
+            <div className='card-wrapper'>
                 <div className='writer-card'>
                     <div className='img-wrapper'>
                         <img src={process.env.PUBLIC_URL + `/img/topPage/TP_Writer.png`}/>

@@ -9,6 +9,10 @@ footer {
 
 footer .newsletter {
     margin-bottom: 120px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
 }
 
 footer .touroku-box {
@@ -32,3 +36,43 @@ footer .policy {
     gap: var(--space-l);
     margin-bottom: var(--space-base);
 }
+@media screen and (max-width: 1300px) {
+    footer {
+        padding: var(--space-xl);
+    }
+    footer .touroku-box input {
+        width: 350px;
+    }
+    footer .touroku-box button {
+        margin-left: calc(var(--space-xxl)*-2)
+    }
+}
+@media screen and (max-width: 1080px) {
+    footer {
+        padding: var(--space-base);
+        padding-top: var(--space-xl);
+    }
+    footer .sns-list {
+        margin-bottom: var(--space-m);
+    }
+    footer .newsletter {
+        flex-direction: column;
+    }
+    footer .newsletter .text, footer .newsletter .text img {
+        width: 100%;
+    }
+    footer .touroku-box {
+        width: 100vw;
+        padding: var(--space-base);
+        padding-top: var(--space-l);
+    }
+    footer .touroku-box input {
+        width: 70%;
+    }
+    footer .touroku-box button {
+        margin-left: calc(var(--space-xxl)*-2);
+        width: 120px;
+        padding: 18px;
+    }
+}
+

@@ -1,8 +1,8 @@
 :root {
-  --color-gray: #504A48;
+  --color-gray: #3f3b3a;
   --color-white: #F0F0F0;
   --color-yellow: #FFF500;
-  --color-light-gray: #504a4870;
+  --color-light-gray: #3f3b3a70;
   --color-red: #DC2020;
 
   /* Space - Sizes */
@@ -16,7 +16,9 @@
   --space-xxl: 52px;
 
   --nav-height: 90px;
+  --nav-height-mb: 60px;
   --mb-footer: calc(var(--space-xxl)*2);
+  --mb-footer-mb: var(--space-xxl);
 }
 
 body {

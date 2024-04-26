@@ -78,6 +78,20 @@ a {
 }
 
 .verticle {writing-mode: vertical-lr;}
+
+@media screen and (max-width: 1080px) {
+  .title.medium, .medium {
+    font-size: 20px;
+  }
+  .title.medium-large, .medium-large {
+    font-size: 27px;
+    letter-spacing: .1em;
+  }
+  .title.large, .large {
+    font-size: 48px;
+    letter-spacing: .15em;
+  }
+}
 /* -----------------------------------------------------------------------------SIZES */
 .w-1024 {
   width: 1024px;
@@ -220,6 +234,9 @@ a {
 .mt-xl { margin-top: var(--space-xl); }
 
 .mt-nav {margin-top: var(--nav-height);}
+@media screen and (max-width: 1080px) {
+  .mt-nav {margin-top: var(--nav-height-mb);}
+}
 .mt-100 { margin-top: 100px; }
 .mt-base { margin-top: var(--space-base); }
 .mt-m { margin-top: var(--space-m); }
@@ -345,6 +362,13 @@ a {
 .price-icon img {
   width: 100%;
 }
+
+@media screen and (max-width: 640px) {
+  .price-icon {
+    bottom: 10px;
+    right: 10px;
+  }
+}
 /* -----------------------------------------------------------------------------FORM */
 input[type="text"], input[type="email"], input[type="tel"], textarea{
   border: none;
@@ -454,6 +478,12 @@ button.disabled:hover {
   box-shadow: none;
   font-size: 14px;
 }
+
+@media screen and (max-width: 1080px) {
+  a.seemore {
+    font-size: 14px;
+  }
+}
 /* ---------------------------------------------------------------------------ELEMENTS */
 .texture {
   position: fixed;
@@ -462,15 +492,18 @@ button.disabled:hover {
   pointer-events:none;
 }
 .texture img {
-  width: 100vw;
+  width: 100%;
+  height: 100%;
 }
 .texture .noise {
   mix-blend-mode: overlay;
+  position: fixed;
   opacity: 7%;
 }
 .texture .paper {
   mix-blend-mode: multiply;
-  opacity: 100%;
+  position: fixed;
+  opacity: 10%;
 }
 
 .category {
@@ -554,7 +587,26 @@ button.disabled:hover {
   color: var(--color-white);
   cursor: pointer;
 }
-
+@media screen and (max-width: 1080px) {
+  .review .popup {
+    top: 55%;
+    width: 90%;
+    height: 85%;
+  }
+  .price .popup {
+    top: 53%;
+    width: 90%;
+    height: 90%;
+    padding: var(--space-s);
+  }
+  .price .close {
+    top: 10px;
+    right: 15px;
+  }
+  .price .popup .img-wrapper img {
+    height: 100%;
+  }
+}
 
 /* ---------------------------------------------------------------------------KEYFRAMES */
 @keyframes gradient {

@@ -2,7 +2,7 @@
     width: 1194px;
     margin: 0 auto;
     padding-top: var(--space-xxl);
-    padding-bottom: var(--space-xxl);
+    padding-bottom: calc(var(--space-xxl)*2);
 }
 .tp_writer, .tp_coach {
     padding-top: 120px;
@@ -23,7 +23,11 @@
     width: 100%;
     margin-bottom: var(--space-m);
 }
-
+.tp_writer .card-wrapper {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
 .tp_writer .card-wrapper .text-wrapper, .tp_coach .card-wrapper .coach-card .text-wrapper {
     background-color: var(--color-white);
     padding: var(--space-base);
@@ -68,10 +72,14 @@
     padding: var(--space-m);
     border: 1px solid var(--color-gray);
     gap: var(--space-m);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 100%;
 }
 
 section.yourstory {
-    background: url('/public/img/topPage/yourstory.png');
+    background: url('/public/img/topPage/yourstory.png') no-repeat;
     background-position: center;
     height: 640px;
 }
@@ -79,7 +87,7 @@ section.yourstory .wrapper {
     height: 100%;
     text-align: center;
     align-content: center;
-    background: #261f1db6;
+    background: #1d1a19a4;
 }
 section.yourstory .wrapper button {
     margin-top: 80px;
@@ -100,11 +108,12 @@ section.yourstory .wrapper button {
     transform: scale(5);
 }
 .cursor circle {
-    fill: var(--color-white);
+    fill: #fff;
   }
 
 .hero-column {
     border-right: 1px solid var(--color-gray);
+    border-left: 1px solid var(--color-gray);
     width: 17vw;
     height: 100%;
     background: var(--color-white);
@@ -138,4 +147,48 @@ section.yourstory .wrapper button {
     display: -webkit-box; 
     -webkit-box-orient: vertical; 
     -webkit-line-clamp: 2; 
+}
+
+@media screen and (max-width: 1080px) {
+    .container {
+        width: 100%;
+        padding-bottom: 0;
+    }
+    .tp_writer .card-wrapper {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: var(--space-l);
+    }
+    .tp_writer .card-wrapper img {
+        width: 100%;
+    }
+    .section-header {
+        padding: var(--space-s);
+    }
+    .review-card-wrapper {
+        flex-direction: column;
+    }
+    .tp_review .body .bottom {
+        height: 50vh;
+        background-size: cover;
+        background-position-x: -350px;
+        background-repeat: no-repeat;
+    }
+    section.yourstory {
+        background-size: 200%;
+        height: 445px;
+    }
+    #top-page section.feature .img-wrapper {
+        width: 100%;
+        background-position-x: center;
+        background-size: 210%;
+        height: 70vh;
+        margin-top: 0;
+    }
+    #top-page section.feature .img-wrapper button {
+        margin-top: 35%;
+    }
+    .tp_blog {
+        margin-bottom: var(--mb-footer-mb);
+    }
 }

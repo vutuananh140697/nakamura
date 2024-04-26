@@ -9,3 +9,9 @@
     -webkit-box-orient: vertical; 
     -webkit-line-clamp: 3; 
 }
+
+@media screen and (max-width: 1080px) {
+    .review-card-wrapper .content .description p {
+        width: 100%;
+    }
+}

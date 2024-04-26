@@ -1,48 +1,16 @@
 #top-page section.hero {
     height: calc(100vh - var(--nav-height));
+    display: flex;
+    flex-direction: row;
 }
 
-/* #top-page section.hero .left {
-    border-right: 1px solid var(--color-gray);
-    width: 17vw;
-    height: 100%;
-    background: var(--color-white);
-}
-
-#top-page section.hero .right {
-    border-left: 1px solid var(--color-gray);
-    width: 17vw;
-    height: 100%;
-    background: var(--color-white);
-} */
 
 #top-page section.hero .divider {
     background: url('/public/img/icon/slash.svg') repeat;
     width: 100%;
     height: 8px;
 }
-/* #top-page section.hero .left .title, #top-page section.hero .right .title{
-    padding: var(--space-base);
-} */
-/* #top-page section.hero .left .item-title, #top-page section.hero .right .item-title{
-    padding: 0;
-    letter-spacing: .1em;
-} */
 
-/* #top-page section.hero .list {
-    padding: var(--space-base);
-    padding-top: var(--space-m);
-}
-#top-page section.hero .list .list-item {
-    margin-bottom: var(--space-m);
-}
-#top-page section.hero .list .list-item .title {
-    padding: 0;
-}
-#top-page section.hero .list .list-item .date {
-    color: var(--color-light-gray);
-    margin-bottom: var(--space-xs);
-} */
 #top-page section.hero .mid {
     width: 66vw;
     padding: var(--space-xs);
@@ -65,7 +33,6 @@
     background-image: url('/public/img/kvImg.png');
     background-position: center;
     filter: saturate(50%);
-    /* position: absolute; */
 }
 #top-page section.hero .mid .kv-wrapper:hover .kvImg {
     filter: saturate(1);
@@ -114,7 +81,6 @@
     margin-bottom: var(--space-xs);
 }
 #top-page section.service {
-    height: 205vh;
     background-color: var(--color-gray);
     margin: var(--space-xs);
     margin-bottom: 0;
@@ -177,4 +143,26 @@
     text-decoration: none;
     color: var(--color-white);
     cursor: pointer;
+}
+
+
+@media screen and (max-width: 1080px) {
+    #top-page section.hero {
+        flex-direction: column;
+        height: auto;
+
+    }
+    #top-page section.hero .mid {
+        width: 100vw;
+        /* flex-direction: column-reverse;
+        display: flex; */
+    }
+    #top-page section.hero .mid .kv-wrapper .kvImg {
+        width: 100%;
+    }
+    #top-page section.hero .mid .title {
+        /* padding: var(--space-s); */
+        font-size: 48px;
+        /* letter-spacing: 0; */
+    }
 }

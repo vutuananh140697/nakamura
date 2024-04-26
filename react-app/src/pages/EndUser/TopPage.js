@@ -21,8 +21,6 @@ export default function TopPage(){
     const [showFeature, setShowFeature] = useState(false);
 
     const [device,setDevice] = useState("pc");
-    const [offsetY,setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
 
     useEffect(() => {
         window.scrollTo(0, 0);
@@ -31,20 +29,20 @@ export default function TopPage(){
         window.addEventListener('resize', handleResize);
 
         Aos.init({duration: 2000});
-        window.addEventListener("scroll",handleScroll);
-        return() => window.removeEventListener("scroll", handleScroll);
     }, []);
 
     function handleResize() {
-        if (window.innerWidth <= 768) { setDevice("mb") } else { setDevice("pc") }
+        if (window.innerWidth <= 1080) { setDevice("mb") } else { setDevice("pc") }
     }
 
     return(
         <div id="top-page" className="mt-nav">   
-            <section className="hero flex-row">
-                <div className="left">  
-                    <HeroColumn item = 'blog'/>
-                </div>
+            <section className="hero">
+                {device === 'pc' &&
+                    <div className="left">  
+                        <HeroColumn item = 'blog'/>
+                    </div>
+                }
                 <div className="mid">
                     <div className="title">{words.terms.top.catchcopy}</div>
                     <div className="kv-wrapper">
@@ -59,9 +57,11 @@ export default function TopPage(){
                         </Link>
                     </div>
                 </div>
-                <div className="right">
-                    <HeroColumn item = 'review'/>
-                </div>
+                {device === 'pc' &&
+                    <div className="right">
+                        <HeroColumn item = 'review'/>
+                    </div>
+                }
             </section>
             <div className="divider">
                 <img src={process.env.PUBLIC_URL + `/img/divider.svg`}/>

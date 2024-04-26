@@ -67,9 +67,10 @@
 
 @media screen and (max-width: 1080px) {
     #header {
-        height: 75px;
+        height: 60px;
         flex-direction: row;
         width: 100vw;
+        padding: 15px 20px;
     }
 
     #header > .menu-icon {
@@ -129,9 +130,6 @@
 }
 
 @media screen and (max-width: 640px) {
-    #header {
-        padding: 15px 20px;
-    }
     #header > .header__menu{
         width: 100%;
     }
