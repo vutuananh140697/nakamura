@@ -14,6 +14,7 @@ import TP_Review_Section from "../../components/TP_Review_Section";
 import YourStory_Section from "../../components/YourStory_Section";
 import TP_Blog_Section from "../../components/TP_Blog_Section";
 import Feature from "../../components/Feature";
+import HeroColumn from "../../components/HeroColumn";
 
 export default function TopPage(){
     const [curSection, setCurSection] = useState('writing');
@@ -41,35 +42,8 @@ export default function TopPage(){
     return(
         <div id="top-page" className="mt-nav">   
             <section className="hero flex-row">
-                <div className="left">
-                    <div className="title medium">{words.terms.blog.title}</div>
-                    <div className="divider"></div>
-                    <div className="list">
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <Link className="item-title">ついに！期間限定で無料体験レッスンを行います</Link>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                    </div>
+                <div className="left">  
+                    <HeroColumn item = 'blog'/>
                 </div>
                 <div className="mid">
                     <div className="title">{words.terms.top.catchcopy}</div>
@@ -86,30 +60,7 @@ export default function TopPage(){
                     </div>
                 </div>
                 <div className="right">
-                    <div className="title medium">{words.terms.review.title}</div>
-                    <div className="divider"></div>
-                    <div className="list">
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                        <div className="list-item">
-                            <div className="date">2021.10.27</div>
-                            <div className="item-title">ついに！期間限定で無料体験レッスンを行います</div>
-                        </div>
-                    </div>
+                    <HeroColumn item = 'review'/>
                 </div>
             </section>
             <div className="divider">

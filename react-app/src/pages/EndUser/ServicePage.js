@@ -5,6 +5,7 @@ import { HashLink } from 'react-router-hash-link';
 import words from "../../words";
 
 import './ServicePage.css'
+import YourStory_Section from "../../components/YourStory_Section";
 
 export default function ServicePage(){
     useEffect(() => {
@@ -104,6 +105,9 @@ export default function ServicePage(){
                     </div>
                 </div>
             </section>
+
+            <YourStory_Section/>
+
         </div>
     )
 }

@@ -1,11 +1,17 @@
-.feature.container {
+.feature {
+    position: relative;
+    z-index: 100;
+    padding-top: 80px;
+}
+.feature .container {
     background: var(--color-white);
     border: 1px solid var(--color-gray);
     padding: var(--space-l);
     max-width: 1050px;
+
 }
 
-.feature.container p {
+.feature .container p {
     text-align: justify;
 }
 

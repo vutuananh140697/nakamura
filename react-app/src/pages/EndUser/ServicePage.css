@@ -21,7 +21,6 @@
 }
 #service-page .wrapper {
     border: 1px solid var(--color-gray);
-
 }
 #service-page #writer .title, #service-page #ghostwriter .title, #service-page #coach .title {
     color: var(--color-white);
@@ -31,9 +30,16 @@
 }
 #service-page .p-wrapper {
     padding: var(--space-xl) var(--space-l);
-
 }
 
 #service-page .p-wrapper p {
     font-size: 16px;
+}
+
+#service-page #writer, #service-page #ghostwriter, #service-page #coach {
+    position: relative;
+    z-index: 10;
+}
+#service-page #coach {
+    margin-bottom: var(--mb-footer);
 }
