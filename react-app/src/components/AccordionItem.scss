@@ -80,7 +80,7 @@ $white: var(--color-white);
         }
         + .accordion-content {
         opacity: 1;
-        max-height: 15em;
+        max-height: 100em;
         transition: all 200ms linear;
         will-change: opacity, max-height;
         }

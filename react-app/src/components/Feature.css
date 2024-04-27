@@ -12,7 +12,9 @@
 .feature.container p {
     text-align: justify;
 }
-
+/* .feature .wrapper-1 {
+    grid-column: col-start 1 / -1;
+} */
 .feature .text-wrapper-1 {
     padding-top: var(--space-s);
     padding-bottom: var(--space-s);
@@ -135,4 +137,29 @@
 .feature .button-wrapper {
     grid-column: col-start 4 / -1;
     text-align: right;
+}
+
+@media screen and (max-width: 1080px) {
+    #feature-page .header p {
+        width: 100%;
+        padding-left: var(--space-base);
+        padding-right: var(--space-base);
+    }
+    .feature.container {
+        display: flex;
+        flex-direction: column;
+        gap: var(--space-base);
+        padding: var(--space-base);
+    }
+
+    .feature .text-wrapper-10 {
+        padding: var(--space-base);
+    }
+
+    .feature .text-wrapper-5 {
+        padding: var(--space-s);
+    }
+    .feature .text-wrapper-7 {
+        border-bottom: none;
+    }
 }

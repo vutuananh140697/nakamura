@@ -89,7 +89,7 @@ a {
   }
   .title.large, .large {
     font-size: 48px;
-    letter-spacing: .15em;
+    letter-spacing: 0;
   }
 }
 /* -----------------------------------------------------------------------------SIZES */

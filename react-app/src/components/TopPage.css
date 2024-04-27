@@ -81,6 +81,7 @@
 section.yourstory {
     background: url('/public/img/topPage/yourstory.png') no-repeat;
     background-position: center;
+    background-size: cover;
     height: 640px;
 }
 section.yourstory .wrapper {
@@ -161,6 +162,17 @@ section.yourstory .wrapper button {
     }
     .tp_writer .card-wrapper img {
         width: 100%;
+    }
+    .tp_coach .card-wrapper .coach-card {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .tp_coach .card-wrapper .coach-card .img-wrapper, .tp_coach .card-wrapper .coach-card .img-wrapper img {
+        width: 100%;
+    }
+    .tp_coach .card-wrapper .coach-card .text-wrapper .cta-wrapper {
+        height: 30%;
+        text-align: center;
     }
     .section-header {
         padding: var(--space-s);

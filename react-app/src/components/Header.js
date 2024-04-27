@@ -23,22 +23,9 @@ export default class Header extends React.Component {
         this.setState({clicked: false})
     }
     componentDidMount() {
-        // window.addEventListener("scroll", this.handleScroll);
         window.addEventListener("scroll", this.closeMobileMenu);
     }
-    componentWillUnmount() {
-        // window.removeEventListener("scroll", this.handleScroll);
-    }
-    // handleScroll = () => {
-    //     if (window.innerWidth <= 960) {
-    //         this.setState({show:true})
-    //     } else {
-    //         this.setState({
-    //             scrollPos: document.body.getBoundingClientRect().top,
-    //             show: document.body.getBoundingClientRect().top > this.state.scrollPos
-    //         })
-    //     }
-    // }
+
     render() {
         return(
             <header id='header' className={this.state.show ? "show" : "hidden"}>

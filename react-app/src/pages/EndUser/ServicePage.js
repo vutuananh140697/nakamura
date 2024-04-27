@@ -18,7 +18,7 @@ export default function ServicePage(){
                 <div className="header text-align-ct">
                     <div className="title large py-m">{words.terms.service.title}</div>
                 </div>
-                <div className="gallery flex-row-ct">
+                <div className="gallery">
                     <div className="item">
                         <HashLink to='/service/#writer'>
                             <div className="title medium">{words.terms.service.writer}</div>

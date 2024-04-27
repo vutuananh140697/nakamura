@@ -75,4 +75,11 @@ footer .policy {
         padding: 18px;
     }
 }
-
+@media screen and (max-width: 640px) {
+    footer .policy, footer .copyright {
+        font-size: 12px;
+    }
+    footer .policy {
+        gap: var(--space-base);
+    }
+}

@@ -10,9 +10,6 @@ export default function TP_Blog_Section() {
     const [blog, setBlog] = useState([]);
 
     useEffect(() => {
-        window.scrollTo(0, 0);
-        document.title = words.terms.blog.title;
-        
         getPosts();
     }, []);
     

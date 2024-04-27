@@ -1,12 +1,25 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import words from '../words';
 
 import './Feature.css'
 
 export default function Feature() {
+    const [device, setDevice] = useState("pc");
+
+    useEffect(() => {
+        window.addEventListener('resize', handleResize);
+    }, []);
+    function handleResize() {
+        if (window.innerWidth <= 1080) { setDevice("mb") } else { setDevice("pc") }
+    }
     return(
         <div className='feature container four-col-grid gap-m'>
+            {device === 'mb' &&
+            <div className='img-wrapper-1'>
+                 <img className='w-100pc' src={process.env.PUBLIC_URL + `/img/feature/feature_01_mb.png`}/>
+            </div>
+            }
             <div className='text-wrapper-1'>
                 <div className='konichiwa'>こんにちは。</div>
                 <p>
@@ -15,19 +28,29 @@ export default function Feature() {
                     さらに、文章コーチとして、主に大人を対象に「書き方のレッスン」を提供しています。
                 </p>
             </div>
+            {device === 'pc' &&
             <div className='img-wrapper-1'>
-                <img className='w-100pc' src={process.env.PUBLIC_URL + `/img/feature/feature_01.png`}/>
+                 <img className='w-100pc' src={process.env.PUBLIC_URL + `/img/feature/feature_01.png`}/>
             </div>
+            }
             <div className='img-wrapper-2'>
                 <img className='w-100pc' src={process.env.PUBLIC_URL + `/img/feature/feature_02.png`}/>
             </div>
             <div className='text-wrapper-2'>
                 <div className='first'>
                     <div className='number'>1</div>
+                    {device === 'pc' &&
                     <p>
                         私の強みはもちろん最初にいきなり官公庁のトップ（市長、大臣）のために、合計８年間、<br/>
                         800本を超える様々な文章を書き続けたことがあります。
                     </p>
+                    }
+                    {device === 'mb' &&
+                    <p>
+                        私の強みはもちろん最初にいきなり官公庁のトップ（市長、大臣）のために、合計８年間、
+                        800本を超える様々な文章を書き続けたことがあります。
+                    </p>
+                    }
                 </div>
                 <div className='second'>
                     <div className='number'>2</div>
@@ -62,11 +85,20 @@ export default function Feature() {
             </div>
             <div className='text-wrapper-7'>
                 <div className='koreda'>これだ！</div>
+                {device === 'pc' &&
                 <p>
                     相手に質問を投げかけ、自分でも気づいていなかった、ことばの底にある思いを引き上げて、それを文章にするんだ。そうしたら、読んだ人はもっと書き手の心や思い
                     がわかる。もっと身近に感じてくれる。実際に会う前から、知っている人のように思える。私がやりたかったのは、<br/>
                     <span className='bold'>これだ！</span>と思いました。
                 </p>
+                }
+                {device === 'mb' &&
+                <p>
+                    相手に質問を投げかけ、自分でも気づいていなかった、ことばの底にある思いを引き上げて、それを文章にするんだ。そうしたら、読んだ人はもっと書き手の心や思い
+                    がわかる。もっと身近に感じてくれる。実際に会う前から、知っている人のように思える。私がやりたかったのは、
+                    <span className='bold'>これだ！</span>と思いました。
+                </p>
+                }
             </div>
             <div className='img-wrapper-5'>
                 <img className='w-100pc' src={process.env.PUBLIC_URL + `/img/feature/feature_05.png`}/>

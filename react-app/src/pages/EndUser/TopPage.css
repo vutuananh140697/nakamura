@@ -166,3 +166,17 @@
         /* letter-spacing: 0; */
     }
 }
+
+@media screen and (max-width: 640px) {
+    #blog-page .container {
+        padding-top: var(--space-base);
+    }
+    .category-wrapper {
+        padding-left: var(--space-base);
+        padding-right: var(--space-base);
+        justify-content: space-between;
+    }
+    .category-wrapper .category {
+        margin-right: 0;
+    }
+}
