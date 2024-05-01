@@ -4,16 +4,14 @@ import {Link} from 'react-router-dom';
 import parse from 'html-react-parser'
 import words from '../words';
 
-import ReviewCard from './ReviewCard';
+import ReviewCard from '../components/ReviewCard';
 
 import './TopPage.css'
 
 export default function TP_Review_Section(props) {
     const [reviews, setReviews] = useState([])
-    const [showPopUp,setShowPopUp] = useState(false)
-    const [selectedId, setSelectedId] = useState()
-
-    console.log(props.category)
+    const [showReviewPopUp,setShowReviewPopUp] = useState(false)
+    const [selectedReviewId, setSelectedReviewId] = useState()
 
     useEffect(() => {
         getReviews();
@@ -24,9 +22,9 @@ export default function TP_Review_Section(props) {
             setReviews(response.data);
         });
     }
-    const toggleShowPopUp = (id) => {
-        setShowPopUp(!showPopUp)
-        setSelectedId(id)
+    const toggleShowReviewPopUp = (id) => {
+        setShowReviewPopUp(!showReviewPopUp)
+        setSelectedReviewId(id)
     }
     return(
         <div className='tp_review top-divider-white container'>
@@ -37,7 +35,7 @@ export default function TP_Review_Section(props) {
             <div className='body'>
                 <div className='card-gallery two-col-grid'>
                     {reviews.filter(item => item.category === props.category).slice(0,2).map((review, key) =>
-                        <Link onClick={() => toggleShowPopUp(review.id)}>
+                        <Link onClick={() => toggleShowReviewPopUp(review.id)}>
                             <ReviewCard reviewId={review.id} name={review.name} cover={review.cover} description={review.description} message={review.message} />  
                         </Link>
                     )}
@@ -48,15 +46,15 @@ export default function TP_Review_Section(props) {
                     </Link>
                 </div>
             </div>
-            {showPopUp &&
+            {showReviewPopUp &&
                 <div className="review overlay">
                     <div className="review popup">
-                        <a className="close" onClick={() => setShowPopUp(!showPopUp)}>&times;</a>
+                        <a className="close" onClick={() => setShowReviewPopUp(!showReviewPopUp)}>&times;</a>
                         <div className='avatar'> 
-                            <img className='w-100pc round aspect-square' src={words.api.admin.file.get(reviews.find((e) => e.id === selectedId).cover)}/>
+                            <img className='w-100pc round aspect-square' src={words.api.admin.file.get(reviews.find((e) => e.id === selectedReviewId).cover)}/>
                         </div>
-                        <div className="title medium text-align-ct my-base">{reviews.find((e) => e.id === selectedId).name}</div>
-                        <div className="message">{parse(reviews.find((e) => e.id === selectedId).message ??'')}</div>
+                        <div className="title medium text-align-ct my-base">{reviews.find((e) => e.id === selectedReviewId).name}</div>
+                        <div className="message">{parse(reviews.find((e) => e.id === selectedReviewId).message ??'')}</div>
                     </div>
                 </div>
             }

@@ -120,31 +120,6 @@
     margin-top: 30%;
 }
 
-.feature.popup {
-    margin: 0 auto;
-    /* transform: translateX(-50%); */
-    /* padding: var(--space-l); */
-    top: 10%;
-    border-radius: 5px;
-    width: 1050px;
-    height: 90%;
-    position: relative;
-    transition: all 5s ease-in-out;
-    overflow: auto;
-    overflow-x: hidden;
-}
-.feature .close {
-    position: fixed;
-    top: 60px;
-    right: 200px;
-    transition: all 200ms;
-    font-size: 32px;
-    font-weight: 900;
-    text-decoration: none;
-    color: var(--color-white);
-    cursor: pointer;
-}
-
 
 @media screen and (max-width: 1080px) {
     #top-page section.hero {

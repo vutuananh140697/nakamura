@@ -358,6 +358,10 @@ a {
   border-radius: 50%;
   cursor: pointer;
   z-index: 999;
+  transition: all .3s ease-in-out;
+}
+.price-icon:hover {
+  transform: scale(1.1);
 }
 .price-icon img {
   width: 100%;
@@ -404,6 +408,7 @@ button {
   font-weight: 600;
   letter-spacing: .15em;
   position: relative;
+  transition: all .3s ease-in-out;
   /* z-index: 1000; */
 }
 button.primary {
@@ -460,9 +465,7 @@ a.seemore:hover {
   text-underline-offset: 5px;
 }
 button:hover {
-  transition: all .3s;
-  font-weight: bold;
-  font-size: 16px;
+  transform: scale(1.1);
 }
 
 button.disabled {
@@ -487,6 +490,7 @@ button.disabled:hover {
 /* ---------------------------------------------------------------------------ELEMENTS */
 .texture {
   position: fixed;
+  top: 0;
   z-index: 9999;
   overflow: visible;
   pointer-events:none;
@@ -528,14 +532,13 @@ button.disabled:hover {
   background: rgba(0, 0, 0, 0.7);
   transition: opacity 500ms;
   z-index: 1001;
+  align-content: center;
 }
 .review.popup {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin: 0 auto;
   padding: var(--space-l);
   background: #fff;
-  border-radius: 5px;
+  border-radius: 7px;
   width: 30%;
   height: 90%;
   position: relative;
@@ -563,10 +566,19 @@ button.disabled:hover {
   padding: var(--space-base);
 }
 
+.feature.popup {
+  margin: 0 auto;
+  border-radius: 10px;
+  width: 1050px;
+  height: 90%;
+  position: relative;
+  transition: all 5s ease-in-out;
+  overflow: auto;
+  overflow-x: hidden;
+}
+
 .price .popup {
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  margin: 0 auto;
   padding: var(--space-l);
   background: #fff;
   border-radius: 5px;
@@ -576,7 +588,7 @@ button.disabled:hover {
   transition: all 5s ease-in-out;
   overflow: auto;
 }
-.price .close {
+.price .close, .feature .close {
   position: fixed;
   top: 20px;
   right: 30px;

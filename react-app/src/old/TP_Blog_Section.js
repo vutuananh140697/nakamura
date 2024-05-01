@@ -3,7 +3,7 @@ import axios from "axios";
 import {Link} from 'react-router-dom';
 import words from '../words';
 import './TopPage.css'
-import BlogCard from './BlogCard';
+import BlogCard from '../components/BlogCard';
 
 
 export default function TP_Blog_Section() {

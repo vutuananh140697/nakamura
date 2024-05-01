@@ -92,7 +92,7 @@ table thead {
     background: #fff;
     border-radius: 5px;
     width: 25%;
-    /* position: relative; */
+    position: relative;
     transition: all 5s ease-in-out;
 }
 .admin .popup .close {
