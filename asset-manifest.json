@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/nakamura_clone/static/css/main.7b2c5d73.css",
+    "main.js": "/nakamura_clone/static/js/main.106e0b48.js",
+    "static/js/453.80804725.chunk.js": "/nakamura_clone/static/js/453.80804725.chunk.js",
+    "static/media/kvImg.png": "/nakamura_clone/static/media/kvImg.114296f70a88dbfae42d.png",
+    "static/media/TP_Feature.png": "/nakamura_clone/static/media/TP_Feature.6c82a525b21c0430185a.png",
+    "static/media/yourstory.png": "/nakamura_clone/static/media/yourstory.c6e3e7b08385433cf698.png",
+    "static/media/TP_Review_bottom.png": "/nakamura_clone/static/media/TP_Review_bottom.4674c97818845064705c.png",
+    "index.html": "/nakamura_clone/index.html",
+    "static/media/slash.svg": "/nakamura_clone/static/media/slash.94c029b8b8b3721a1e2e.svg",
+    "static/media/arrow-right-dark.svg": "/nakamura_clone/static/media/arrow-right-dark.a2b4369e65ba228ccbfd.svg",
+    "static/media/arrow-right-light.svg": "/nakamura_clone/static/media/arrow-right-light.067a1c296530a8873105.svg",
+    "static/media/arrow-left-dark.svg": "/nakamura_clone/static/media/arrow-left-dark.e3ab50d85aa7d7893f7f.svg",
+    "main.7b2c5d73.css.map": "/nakamura_clone/static/css/main.7b2c5d73.css.map",
+    "main.106e0b48.js.map": "/nakamura_clone/static/js/main.106e0b48.js.map",
+    "453.80804725.chunk.js.map": "/nakamura_clone/static/js/453.80804725.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7b2c5d73.css",
+    "static/js/main.106e0b48.js"
+  ]
+}
