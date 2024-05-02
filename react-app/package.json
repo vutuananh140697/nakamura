@@ -1,6 +1,7 @@
 {
   "name": "nakamura-app",
   "version": "0.1.0",
+  "homepage": "https://vutuananh140697.github.io/nakamura_clone",
   "private": true,
   "dependencies": {
     "@ckeditor/ckeditor5-react": "^6.2.0",
@@ -25,7 +26,7 @@
   "scripts": {
     "start": "react-scripts --openssl-legacy-provider start",
     "predeploy" : "npm run build",
-    "deploy" : "gh-pages -b main -d build",
+    "deploy": "gh-pages -d build",
     "build": "react-scripts --openssl-legacy-provider build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"    
